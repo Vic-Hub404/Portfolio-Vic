@@ -89,7 +89,8 @@ nav {
   position: relative;
   font-size: 48px;
   font-weight: bold;
-  padding-left: 320px;
+  padding-left: 20px;
+  top: 20px;
 }
 .about-text {
   display: flex;
@@ -100,16 +101,42 @@ nav {
   height: 300px;
 }
 .experience-block {
-    position: relative;
-    
-  width: 600px;
+  position: relative;
+
+  width: 650px;
   height: 400px;
-  border: 2px  solid #75abbc;
+  border: 2px solid #75abbc;
 }
-.about-place{
-    padding-left: 900px;
-    bottom: 400px;
-    position: relative;
+.about-place {
+  padding-left: 900px;
+  bottom: 400px;
+  position: relative;
   font-size: 48px;
   font-weight: bold;
+}
+.experience {
+  position: relative;
+  padding-left: 400px;
+  bottom: 300px;
+  padding-top: 20px;
+}
+.experience-text{
+position: relative;
+font-size: 32px;
+font-weight: bold;
+padding-top: 80px;
+padding-left: 300px;
+bottom: 20px;
+}
+.small-text{
+position: relative;
+font-size: 24px;
+font-weight: normal;
+}
+.education-block{
+    position: relative;
+    width: 650px;
+    height: 400px;
+    border: 2px solid #75abbc;
+   top: 60px;
 }
