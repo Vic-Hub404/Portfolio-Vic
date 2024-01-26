@@ -12,34 +12,35 @@
     <title>Portfolio</title>
   </head>
   <body>
+    <!-- dit hierodner allemaal zorgt ervoor dat de landingpage werkt -->
     <header>
       <nav>
         <img class="logo" src="img/proflogo.png" alt="" />
 
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Experience</a></li>
-        <li><a href="">Education</a></li>
-        <li><a href="">Contact</a></li>
+        <a href="#landing-page">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
     <main>
-      <section class="landing-page">
+      <section id="landing-page">
         <div id="page-color-white"></div>
-        <div class="middle">
+        <h5 class="middle">
           Hi, I’m Vic Theunissen. <br />
           I’m a starting software developer.
-          <div class="blauw"></div>
-          <div class="wit"></div>
-        </div>
+         <a class="cv" href="#experience">Download CV</a>
+        </h5>
         <div id="page-color-blue">
           <div class="page-square"></div>
         </div>
       </section>
-      <section class="About">
+      <!-- hierdoor werkt de about pagina in zijn geheel -->
+      <section id="about">
         <div>
-          <img class="eigen-foto" src="img/channels4_profile.jpg" alt="" />
-          <div class="kop-tet"><div class="about-place">About me</div></div>
+          <img class="eigen-foto" src="img/eigenfoto._FMjpeg" alt="" />
+      <h5 class="about-place">About me</h5>
           <div class="about-text">
             Name:Vic Theunissen <br />
             Date of birth: May 08, 2007 <br />
@@ -48,29 +49,103 @@
           </div>
         </div>
       </section>
-      <section class="experience">
+      <!-- dit is voor het werken van experience -->
+      <section id="experience">
         <div class="experience-block">
-          <div class="kop-text">Experience</div>
-          <div class="experience-text">2019-2022
+          <h5 class="kop-text">Experience</h5>
+          <img class="experience-image" src="img/experiencefoto.jpg" alt="">
+          <div class="experience-text">
+            2019-2022
             <div class="small-text">Worked on the land</div>
           </div>
-          <div class="experience-text">2022-present
-            <div class="small-text">Working in a restaurant as a <br> diswasher and as a servant</div>
+          <div class="experience-text">
+            2022-present
+            <div class="small-text">
+              Working in a restaurant as a <br />
+              diswasher and as a servant
+            </div>
           </div>
         </div>
-        <div class="education-block">
-          <div class="kop-text">Education</div>
-          <div class="experience-text">2019-2023
-            <div class="small-text">Elzendaalcollege Boxmeer
-              Completed my exams</div>
+        <!-- Dit stukje hieronder zorgt ervoor dat het stukje education werkt -->
+        <section id="education">
+          <div class="education-block">
+            <h5 class="kop-text">Education</h5>
+            <img class="education-image" src="img/educationfoto.jpg" alt="">
+            <div class="education-text">
+              2019-2023
+              <div class="small-text">
+                Elzendaalcollege Boxmeer <br />
+                Completed my exams
+              </div>
+            </div>
+            <div class="education-text">
+              2023-present
+              <div class="small-text">
+                Roc Nijmegen Technovium <br />
+                Software developer
+              </div>
+            </div>
           </div>
-          <div class="experience-text">2023-present
-            <div class="small-text">Roc Nijmegen Technovium
-              Software developer</div>
-          </div>
+        </section>
+      </section>
+      <!-- dit hieronder zorgt ervoor dat de contactpagina werkt -->
+      <section id="contact">
+        <h5 class="kop-text-contact">Contact me</h5>
+        <div class="container">
+          <form action="/action_page.php">
+            <input
+              type="text"
+              class="name"
+              name="firstname"
+              placeholder="Your name"
+            />
+
+            <input
+              type="text"
+              class="name"
+              name="e-mail"
+              placeholder="Your e-mail"
+            />
+
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Subject"
+            ></textarea>
+
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your message"
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
         </div>
+        <img class="image" src="img/telephone.png" alt="" />
+        <img class="image" src="img/email.png" alt="" />
+        <div class="text">+31 06 12312312</div>
+        <div class="text">vic.theunissen@gmail.com</div>
       </section>
     </main>
-    <footer></footer>
+    <!-- hieronder is de html van de footer -->
+    <footer>
+      <nav>
+        <section class="left-side">
+          <p>Links</p>
+         <h2><a href="#landing-page"> Home</a></h2> 
+          <h2><a href="#about"> About</a></h2>
+       <h3> <a href="#experience"> Experience/ <br> Education</a></h3>  
+       <h3>  <a href="#contact">  Contact</a></h3> 
+           </section>
+        <section class="right-side">
+          <h4 class="question">Have a Question?</h4>
+          <img class="footer-image" src="img/telephone.png" alt="" />
+          <img class="footer-image" src="img/email.png" alt="" />
+          <div class="footer-text">+31 06 12312312</div>
+          <div class="footer-text">vic.theunissen@gmail.com</div>
+        </section>
+      </nav>
+    </footer>
   </body>
 </html>
